@@ -42,3 +42,8 @@ tr {
 }
 
 text
+
+.input {
+	onfocus="clearCell(this)";
+	value="0";
+}

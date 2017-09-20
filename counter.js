@@ -2,6 +2,10 @@ function addPlayer() {
 
 }
 
+function clearCell(id) {
+	id.value = "";
+}
+
 function validate(id, col) {
 	if (id.value == "") {
 		id.value = "0";
