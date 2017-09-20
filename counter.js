@@ -3,7 +3,9 @@ function addPlayer() {
 }
 
 function clearCell(id) {
-	id.value = "";
+	if id.value = "0" {
+		id.value = "";
+	}
 }
 
 function validate(id, col) {
