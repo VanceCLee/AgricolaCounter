@@ -2,11 +2,11 @@
 <link type="text/css" rel="stylesheet" href="counter.css">
 <script type="text/javascript" src="counter.js"></script>
 <header>
-	
+	<h1>Agricola Self-Calculating Score Board</h1>
 </header>
 <body>
 
-	<table style="width: 98%; padding-left: 8em">
+	<table style="width: 98%; padding-left: 6em">
 		<tr>
 			<th>Score Categories</th>
 			<th>Player 1</th>
@@ -42,6 +42,7 @@
 			<td><input id="vegetables3" type="number" onfocus="clearCell(this)" onblur="validate(this, '3')" value="0"/></td>
 			<td><input id="vegetables4" type="number" onfocus="clearCell(this)" onblur="validate(this, '4')" value="0"/></td>		
 		</tr>
+		<tr><td id="bufferRow1"></td></tr>
 		<tr>
 			<td>Sheep</td>
 			<td><input id="sheep1" type="number" onfocus="clearCell(this)" onblur="validate(this, '1')" value="0"/></td>
@@ -77,6 +78,7 @@
 			<td><input id="fencedStables3" type="number" onfocus="clearCell(this)" onblur="validate(this, '3')" value="0"/></td>
 			<td><input id="fencedStables4" type="number" onfocus="clearCell(this)" onblur="validate(this, '4')" value="0"/></td>	
 		</tr>
+		<tr><td id="bufferRow2"></td></tr>
 		<tr>
 			<td>Clay Hut Rooms</td>
 			<td><input id="clayRooms1" type="number" onfocus="clearCell(this)" onblur="validate(this, '1')" value="0"/></td>
@@ -112,7 +114,8 @@
 			<td><input id="bonusPoints3" type="number" onfocus="clearCell(this)" onblur="validate(this, '3')" value="0"/></td>
 			<td><input id="bonusPoints4" type="number" onfocus="clearCell(this)" onblur="validate(this, '4')" value="0"/></td>		
 		</tr>
-		<tr>
+		<tr><td id="bufferRow3"></td></tr>
+		<tr style="font-size: 140% !important">
 			<td>Totals</td>
 			<td id="total1"></td>
 			<td id="total2"></td>
