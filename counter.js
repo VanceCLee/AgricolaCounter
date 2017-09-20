@@ -2,6 +2,13 @@ function addPlayer() {
 
 }
 
+function validate(id, col) {
+	if (id.value == "") {
+		id.value = "0";
+	}
+	addScore(col);
+}
+
 function addScore(col) {
 	var fields = parseInt(document.getElementById('fields' + col).value);
 	var pastures = parseInt(document.getElementById('pastures' + col).value);
