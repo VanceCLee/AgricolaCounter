@@ -1,0 +1,126 @@
+<html>
+<link type="text/css" rel="stylesheet" href="counter.css">
+<header>
+	
+</header>
+<body>
+
+	<table style="width: 98%; padding-left: 8em">
+		<tr>
+			<th>Score Categories</th>
+			<th>Player 1</th>
+			<th>Player 2</th>
+			<th>Player 3</th>
+			<th>Player 4</th>
+		</tr>
+		<tr>
+			<td>Fields</td>
+			<td id="fields1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="fields2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="fields3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="fields4"><textarea onblur="validate(this, '4')">0</textarea></td>				
+		</tr>
+		<tr>
+			<td>Pastures</td>
+			<td id="pastures1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="pastures2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="pastures3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="pastures4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Grain</td>
+			<td id="grain1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="grain2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="grain3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="grain4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Vegetables</td>
+			<td id="vegetables1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="vegetables2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="vegetables3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="vegetables4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Sheep</td>
+			<td id="sheep1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="sheep2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="sheep3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="sheep4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Wild Boar</td>
+			<td id="wildBoar1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="wildBoar2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="wildBoar3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="wildBoar4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Cattle</td>
+			<td id="cattle1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="cattle2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="cattle3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="cattle4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Unused Spaces</td>
+			<td id="unusedSpaces1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="unusedSpaces2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="unusedSpaces3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="unusedSpaces4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Fenced Stables</td>
+			<td id="fencedStables1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="fencedStables2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="fencedStables3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="fencedStables4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Clay Hut Rooms</td>
+			<td id="clayRooms1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="clayRooms2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="clayRooms3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="clayRooms4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Stone House Rooms</td>
+			<td id="stoneRooms1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="stoneRooms2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="stoneRooms3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="stoneRooms4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Family Members</td>
+			<td id="familyMembers1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="familyMembers2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="familyMembers3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="familyMembers4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Points For Cards</td>
+			<td id="cardPoints1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="cardPoints2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="cardPoints3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="cardPoints4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Bonus Points</td>
+			<td id="bonusPoints1"><textarea onblur="validate(this, '1')">0</textarea></td>
+			<td id="bonusPoints2"><textarea onblur="validate(this, '2')">0</textarea></td>
+			<td id="bonusPoints3"><textarea onblur="validate(this, '3')">0</textarea></td>
+			<td id="bonusPoints4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+		</tr>
+		<tr>
+			<td>Totals</td>
+			<td id="total1"></td>
+			<td id="total2"></td>
+			<td id="total3"></td>
+			<td id="total4"></td>
+		</tr>
+	</table>
+</body>
+<footer>
+	
+</footer>
+</html>
