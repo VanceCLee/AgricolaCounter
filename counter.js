@@ -2,13 +2,6 @@ function addPlayer() {
 
 }
 
-function validate(currentTextBox, col) {
-	if (isNaN(currentTextBox.innerHTML)) {
-		currentTextBox.innerHTML = 0;
-	}
-	addScore(col);
-}
-
 function addScore(col) {
 	var fields = parseInt(document.getElementById('fields' + col).value);
 	var pastures = parseInt(document.getElementById('pastures' + col).value);

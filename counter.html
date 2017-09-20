@@ -1,5 +1,6 @@
 <html>
 <link type="text/css" rel="stylesheet" href="counter.css">
+<script type="text/javascript" src="counter.js"></script>
 <header>
 	
 </header>
@@ -15,101 +16,101 @@
 		</tr>
 		<tr>
 			<td>Fields</td>
-			<td id="fields1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="fields2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="fields3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="fields4"><textarea onblur="validate(this, '4')">0</textarea></td>				
+			<td><input id="fields1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="fields2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="fields3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="fields4" type="number" onblur="addScore('4')" value="0"/></td>				
 		</tr>
 		<tr>
 			<td>Pastures</td>
-			<td id="pastures1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="pastures2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="pastures3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="pastures4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="pastures1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="pastures2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="pastures3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="pastures4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Grain</td>
-			<td id="grain1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="grain2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="grain3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="grain4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="grain1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="grain2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="grain3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="grain4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Vegetables</td>
-			<td id="vegetables1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="vegetables2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="vegetables3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="vegetables4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="vegetables1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="vegetables2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="vegetables3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="vegetables4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Sheep</td>
-			<td id="sheep1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="sheep2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="sheep3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="sheep4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="sheep1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="sheep2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="sheep3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="sheep4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Wild Boar</td>
-			<td id="wildBoar1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="wildBoar2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="wildBoar3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="wildBoar4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="wildBoar1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="wildBoar2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="wildBoar3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="wildBoar4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Cattle</td>
-			<td id="cattle1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="cattle2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="cattle3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="cattle4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="cattle1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="cattle2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="cattle3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="cattle4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Unused Spaces</td>
-			<td id="unusedSpaces1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="unusedSpaces2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="unusedSpaces3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="unusedSpaces4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="unusedSpaces1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="unusedSpaces2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="unusedSpaces3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="unusedSpaces4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Fenced Stables</td>
-			<td id="fencedStables1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="fencedStables2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="fencedStables3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="fencedStables4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="fencedStables1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="fencedStables2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="fencedStables3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="fencedStables4" type="number" onblur="addScore('4')" value="0"/></td>	
 		</tr>
 		<tr>
 			<td>Clay Hut Rooms</td>
-			<td id="clayRooms1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="clayRooms2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="clayRooms3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="clayRooms4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="clayRooms1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="clayRooms2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="clayRooms3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="clayRooms4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Stone House Rooms</td>
-			<td id="stoneRooms1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="stoneRooms2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="stoneRooms3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="stoneRooms4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="stoneRooms1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="stoneRooms2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="stoneRooms3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="stoneRooms4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Family Members</td>
-			<td id="familyMembers1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="familyMembers2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="familyMembers3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="familyMembers4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="familyMembers1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="familyMembers2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="familyMembers3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="familyMembers4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Points For Cards</td>
-			<td id="cardPoints1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="cardPoints2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="cardPoints3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="cardPoints4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="cardPoints1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="cardPoints2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="cardPoints3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="cardPoints4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Bonus Points</td>
-			<td id="bonusPoints1"><textarea onblur="validate(this, '1')">0</textarea></td>
-			<td id="bonusPoints2"><textarea onblur="validate(this, '2')">0</textarea></td>
-			<td id="bonusPoints3"><textarea onblur="validate(this, '3')">0</textarea></td>
-			<td id="bonusPoints4"><textarea onblur="validate(this, '4')">0</textarea></td>		
+			<td><input id="bonusPoints1" type="number" onblur="addScore('1')" value="0"/></td>
+			<td><input id="bonusPoints2" type="number" onblur="addScore('2')" value="0"/></td>
+			<td><input id="bonusPoints3" type="number" onblur="addScore('3')" value="0"/></td>
+			<td><input id="bonusPoints4" type="number" onblur="addScore('4')" value="0"/></td>		
 		</tr>
 		<tr>
 			<td>Totals</td>
