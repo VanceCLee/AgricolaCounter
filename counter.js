@@ -3,16 +3,32 @@ var pointFields = ["fields", "pastures", "grain", "vegetables", "sheep", "wildBo
 
 function addPlayer() {
 	if (players < 4) {
+		if (players == 1) {
+			enableDisableButton("removeP", false);
+		}
 		players += 1;
 		changePlayerVisibility(true);
+		if (players == 4) {
+			enableDisableButton("addP", true);
+		}
 	}
 }
 
 function removePlayer() {
 	if (players > 1) {
+		if (players == 4) {
+			enableDisableButton("addP", false);
+		}
 		changePlayerVisibility(false);
 		players -= 1;
+		if (players == 1) {
+			enableDisableButton("removeP", true);
+		}
 	}
+}
+
+function enableDisableButton(id, disable) {
+	document.getElementById(id).disabled = disable;
 }
 
 function changePlayerVisibility(makeVisible) {
@@ -67,6 +83,6 @@ function clearAll() {
 		for (var i = 0; i < pointFields.length; i++) {
 			elements[pointFields[i]].value = "0";
 		}
-		elements["total"].innerHTML = "0";
+		elements["total"].innerHTML = "";
 	}
 }
