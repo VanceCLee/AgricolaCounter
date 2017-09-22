@@ -47,8 +47,13 @@ th {
 	font-size: 140%;
 }
 
+button {
+	align-content: center;
+}
+
+
 #bufferRow1 {
-	padding-top: 7%;
+	padding-top: 4%;
 }
 
 #bufferRow2 {
@@ -60,5 +65,5 @@ th {
 
 table {
 	width: 98%;
-	padding-left: 6em;
+	padding-left: 5%;
 }
