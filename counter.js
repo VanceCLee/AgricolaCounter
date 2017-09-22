@@ -18,7 +18,20 @@ function removePlayer() {
 function changePlayerVisibility(makeVisible) {
 	var elements = inputsArray(players);
 	for (var i = 0; i < pointFields.length; i++) {
-		elements[pointFields[i]].hidden = makeVisible;
+		if (makeVisible) {
+			elements[pointFields[i]].style.visibility = "visible";
+		}
+		else {
+			elements[pointFields[i]].style.visibility = "hidden";
+		}
+	}
+	if (makeVisible) {
+		elements['player'].style.visibility = "visible";
+		elements['total'].style.visibility = "visible";
+	}
+	else {
+		elements['player'].style.visibility = "hidden";
+		elements['total'].style.visibility = "hidden";
 	}
 
 }
@@ -42,6 +55,7 @@ function inputsArray(col) {
 		elements[pointFields[i]] = document.getElementById(pointFields[i] + col);
 	}
 	elements["total"] = document.getElementById('total' + col);
+	elements["player"] = document.getElementById('player' + col);
 
 	return elements;
 }
