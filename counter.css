@@ -40,11 +40,11 @@ div {
 td {
 	text-align: center;
 	padding-top: 1%;
-	font-size: 120%;
+	font-size: 140%;
 }
 
 th {
-	font-size: 120%;
+	font-size: 140%;
 }
 
 #bufferRow1 {
@@ -52,11 +52,13 @@ th {
 }
 
 #bufferRow2 {
-	padding-top: 6%;
+	padding-top: 5%;
 }
 #bufferRow3 {
-	padding-top: 3%;
+	padding-top: 2%;
 }
 
-tr {
+table {
+	width: 98%;
+	padding-left: 6em;
 }
