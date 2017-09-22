@@ -1,5 +1,5 @@
 var players = 4;
-var pointFields = ['fields', 'pastures', 'grain', 'vegetables', 'sheep', 'wildBoar', 'cattle', 'unusedSpaces', 'fencedStables', 'clayRooms', 'stoneRooms', 'familyMembers', 'cardPoints', 'bonusPoints'];
+var pointFields = ["fields", "pastures", "grain", "vegetables", "sheep", "wildBoar", "cattle", "unusedSpaces", "fencedStables", "clayRooms", "stoneRooms", "familyMembers", "cardPoints", "bonusPoints"];
 
 function addPlayer() {
 	if (players < 4) {
@@ -17,23 +17,14 @@ function removePlayer() {
 
 function changePlayerVisibility(makeVisible) {
 	var elements = inputsArray(players);
-	for (var i = 0; i < pointFields.length; i++) {
+	for (key in elements) {
 		if (makeVisible) {
-			elements[pointFields[i]].style.visibility = "visible";
+			elements[key].style.visibility = "visible";
 		}
 		else {
-			elements[pointFields[i]].style.visibility = "hidden";
+			elements[key].style.visibility = "hidden";
 		}
 	}
-	if (makeVisible) {
-		elements['player'].style.visibility = "visible";
-		elements['total'].style.visibility = "visible";
-	}
-	else {
-		elements['player'].style.visibility = "hidden";
-		elements['total'].style.visibility = "hidden";
-	}
-
 }
 
 function clearCell(id) {
@@ -54,8 +45,8 @@ function inputsArray(col) {
 	for (var i = 0; i < pointFields.length; i++) {
 		elements[pointFields[i]] = document.getElementById(pointFields[i] + col);
 	}
-	elements["total"] = document.getElementById('total' + col);
-	elements["player"] = document.getElementById('player' + col);
+	elements["total"] = document.getElementById("total" + col);
+	elements["player"] = document.getElementById("player" + col);
 
 	return elements;
 }
@@ -66,7 +57,7 @@ function addScore(col) {
 	for (var i = 0; i < pointFields.length; i++) {
 		score += parseInt(elements[pointFields[i]].value);
 	}
-	elements['total'].innerHTML = score;
+	elements["total"].innerHTML = score;
 }
 
 
@@ -76,6 +67,6 @@ function clearAll() {
 		for (var i = 0; i < pointFields.length; i++) {
 			elements[pointFields[i]].value = "0";
 		}
-		addScore(col);
+		elements["total"].innerHTML = "0";
 	}
 }
